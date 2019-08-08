@@ -1,0 +1,21 @@
+1、cmd 命令
+  d:  //切换到d盘
+  cd node //切换到d盘node文件夹
+
+2、npm 命令
+   npm install xx -g  //-g全局安装xx
+   npm uninstall xx   //本地卸载xx
+   cmd -> ipconfig  //查询本机ip地址
+  
+ 
+3、创建node项目
+   a.全局安装node -g
+   b.cmd 命令输入 D:  -> cd node //切换到d盘node文件夹
+   c.cmd 命令输入npm init 创建package.json
+   d.cmd 命令输入npm install xx 下载模块
+   e.cmd 命令输入node xx.js 运行文件
+   f.cmd 命令输入 Ctrl+c终止运行
+   运行node可进入运算模式，相当于编辑JS
+
+
+

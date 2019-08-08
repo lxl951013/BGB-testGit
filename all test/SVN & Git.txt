@@ -1,0 +1,54 @@
+********************************* SVN *********************************
+SVNBucket:https://svnbucket.com/#/login
+SVN使用教程：https://blog.csdn.net/atsoar/article/details/80460440
+
+服务器项目下载：选择一个放置项目文件夹，然后右键‘SVN Checkout’
+
+服务器项目上传：SVN Commit
+
+创建分支：点击‘主干文件夹’右键TortoiseSVN=>Branch/tag；选择路径/branches/online1.0，填写注释、单选HEAD
+
+合并分支：分支的跟目录点击show log =》点选最新修改右键‘merge revision to ...’=》 选择主干的跟目录 =》主干上提交这次合并的内容
+
+
+
+
+********************************* Git *********************************
+安装Git教程：https://blog.csdn.net/free_wind22/article/details/50967723
+
+首次使用设置用户名及邮箱：git config  --global user.name 'xxx'
+                         git config  --global user.email 'xxx@qq.com'
+
+创建本地仓库:项目文件夹内右键点击‘Git Bash Here’后输入‘git init’
+
+添加到暂存区：git add xx.xx
+
+提交到版本库：git commit -m '提交说明做了啥'
+
+查看文件状态：git status
+
+查看文件改动情况：git diff xx.xx
+
+查看下历史记录:git log
+
+版本回退:
+    上一个版本：git reset  --hard HEAD^
+    上上一个版本：git reset  --hard HEAD^^
+    前100个版本：git reset  --hard HEAD~100
+
+版本号回退（版本回退后想撤销原先的回退操作）：
+    获取到版本号：git reflog
+    回退版本号：git reset  --hard xx指定的版本号
+
+远程GitHub仓库连接同步： 
+    运行ssh-keygen -t rsa -C "youremail@example.com",在C盘用户文件夹找到.ssh问价夹
+    GitHub建立连接： settings =》 Add SSH Key =》填写站点名及Key，完成新建
+    GitHub建项目：new repo =》填写仓库名称完成新建
+    运行git remote add origin git@github.com:xxx/view.git  测试连接
+    推送到GitHub：git push origin master -u
+
+
+
+
+
+

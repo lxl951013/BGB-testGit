@@ -1,0 +1,196 @@
+1、设置页面不缓存 
+     <meta http-equiv=”pragma” content=”no-cache”>    //禁止浏览器从本地机的缓存中调阅页面内容
+     <meta http-equiv=”cache-control” content=”no-cache”>
+     <meta http-equiv=”expires” content=”0″>     //定义网页 缓存中的过期时间        
+
+
+2、Css3响应式布局：/*min-width:从小写到大*/
+     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+     @media only screen and (min-width:320px ){.box{background: red;}}
+     @media only screen and (min-width:480px ){.box{background: green;}}
+     @media only screen and (min-width:768px ) {.box{background: blue;}}
+     @media only screen and (min-width:992px ) {.box{background: yellow;}}
+     @media only screen and (min-width:1200px ) {.box{background: orange;}}
+
+
+3、弹性盒子布局+媒体查询(响应式布局)
+     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+     .flexMedia{display: -webkit-box;display: -ms-flexbox;display: flex;display: -webkit-flex;flex-wrap: wrap;}
+     .flexMedia div{width: 25%;}
+     .flexMedia div:nth-child(1){background: red;}
+     .flexMedia div:nth-child(2){background: green;}
+     .flexMedia div:nth-child(3){background: blue;}
+     .flexMedia div:nth-child(4){background: blueviolet;}
+     @media only screen and (min-width:320px ){}
+     @media only screen and (min-width:480px ){}
+     @media only screen and (min-width:768px ) {.flexMedia div{width: 100%;}}
+     @media only screen and (min-width:992px ) {.flexMedia div{width: 50%;}}
+     @media only screen and (min-width:1200px ) {.flexMedia div{width: 25%;}}
+
+
+4、百分比布局+媒体查询(响应式布局)
+     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+     .box{width: 100%;height:50px;}
+     .box div{width: 25%;float: left;}
+     .box div:nth-child(1){background: red;}
+     .box div:nth-child(2){background: green;}
+     .box div:nth-child(3){background: blue;}
+     .box div:nth-child(4){background: blueviolet;}
+     @media only screen and (min-width:320px ){}
+     @media only screen and (min-width:480px ){}
+     @media only screen and (min-width:768px ) {.box div{width: 100%;}}
+     @media only screen and (min-width:992px ) {.box div{width: 50%;}}
+     @media only screen and (min-width:1200px ) {.box div{width: 25%;}}
+
+
+5、移动端字体大小
+     @media(max-width:540px){ html { font-size:84.375px; } } /*Android常用宽度*/
+
+     @media(max-width:480px){ html { font-size:75px; } }     /*Android常用宽度*/
+
+     @media(max-width:414px){ html { font-size:64.69px; } }  /*i6Plus,i7Plus宽度*/  
+
+     @media(max-width:375px){ html { font-size:58.59px; } }  /*i6,i7宽度*/
+
+     @media(max-width:360px){ html { font-size:56.25px; } }  /*Android常用宽度*/
+
+
+
+
+
+     @media(max-width:960px){
+ html {
+ font-size:128px;
+ }
+}
+     @media(max-width:800px){
+ html {
+ font-size:106.66px;
+  }
+}
+
+     @media(max-width:760px){
+ html {
+ font-size:101.33px;
+  }
+}
+     @media(max-width:720px){
+ html {
+ font-size:96px;
+ } 
+}
+     @media(max-width:680px){
+ html {
+ font-size:90.66px;
+  }
+}
+     @media(max-width:640px){ html { font-size:85.33px; } }  /*Android常用宽度*/
+       
+     @media(max-width:540px){ html { font-size:72px; } }     /*Android常用宽度*/
+       
+     @media(max-width:480px){ html { font-size:64px; } }     /*Android常用宽度*/
+        
+     @media(max-width:445px){ html { font-size:60px; } }
+        
+     @media(max-width:414px){ html { font-size:55.2px; } }   /*i6Plus,i7Plus宽度*/
+        
+     @media(max-width:375px){ html { font-size:50px; } }     /*i6,i7宽度*/
+        
+     @media(max-width:360px){ html { font-size:48px; } }     /*Android常用宽度*/
+        
+     @media(max-width:320px){ html { font-size:42.67px; } }  /*i5宽度*/
+
+6、去掉 a，input 在移动端浏览器中的默认样式
+     1）、禁止 a 标签背景//a,button,input,optgroup,select,textarea {-webkit-tap-highlight-color:rgba(0,0,0,0);}
+     2）、禁止长按 a，img 标签长按出现菜单栏 //a, img {-webkit-touch-callout: none;}
+     3）、流畅滚动 //body{-webkit-overflow-scrolling:touch;}
+
+7、viewport模板
+     <meta content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport"> //布局视口
+     <meta content="yes" name="apple-mobile-web-app-capable"> //当网站添加到主屏幕快速启动方式，可隐藏地址栏，仅针对ios的safari
+     <meta content="black" name="apple-mobile-web-app-status-bar-style">//将网站添加到主屏幕快速启动方式，仅针对ios的safari顶端状态条的样式
+     <meta content="telephone=no" name="format-detection">//禁止将页面中的数字识别为电话号码
+     <meta content="email=no" name="format-detection">//忽略Android平台中对邮箱地址的识别
+
+8、CSS样式技巧
+     1）、禁止ios和android用户选中文字  //.css{-webkit-user-select:none}
+     
+     2）、禁止ios长按时触发系统的菜单，禁止ios&android长按时下载图片  //.css{-webkit-touch-callout: none}
+
+     3）、webkit去除表单元素的默认样式//.css{-webkit-appearance:none;}
+
+     4）、修改webkit表单输入框placeholder的样式
+               input::-webkit-input-placeholder{color:#AAAAAA;}
+               input:focus::-webkit-input-placeholder{color:#EEEEEE;}
+
+     5）、去除android a/button/input标签被点击时产生的边框 & 去除ios a标签被点击时产生的半透明灰色背景
+               a,button,input{-webkit-tap-highlight-color:rgba(255,0,0,0);}
+
+     6）、ios使用-webkit-text-size-adjust禁止调整字体大小
+               body{-webkit-text-size-adjust: 100%!important;}
+
+     7）、android 上去掉语音输入按钮
+               input::-webkit-input-speech-button {display: none}
+
+     8）、移动端定义字体，移动端没有微软雅黑字体
+               body{font-family:Helvetica;}
+
+     9）、清除浮动
+               .clear { zoom:1; }
+               .clear:after { content:''; display:block; clear:both; }
+     10）、强制换行(中文)
+               .toWrap{white-space: pre-wrap;}
+     11）、禁止换行               
+               .noWrap{white-space:nowrap;}
+
+
+
+9、CSS重置
+     @charset "utf-8";
+     html{-webkit-text-size-adjust:none; -webkit-user-select:none;-webkit-touch-callout: nonefont-family: Helvetica;}
+     body{font-size:12px;}
+     body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,th,td,select{margin:0; padding:0; font-weight: normal;text-indent: 0;}
+     a,button,input,textarea,select{ background: none; -webkit-tap-highlight-color:rgba(255,0,0,0); outline:none; -webkit-appearance:none;}
+     em{font-style:normal}
+     li{list-style:none}
+     a{text-decoration:none;}
+     img{border:none; vertical-align:top;}
+     table{border-collapse:collapse;}
+     textarea{ resize:none; overflow:auto;}
+
+
+
+
+10、其他技巧
+     1）、手机拍照和上传图片
+          <input type=file accept="image/*">  //选择照片
+          <input type=file accept="video/*">  //选择视频
+
+     2）、取消input在ios下，输入的时候英文首字母的默认大写
+          <input autocapitalize="off" autocorrect="off" />
+    
+     3）、打电话和发短信
+          <a href="tel:0755-10086">打电话给:0755-10086</a>
+          <a href="sms:10086">发短信给: 10086</a>
+
+11、移动端调试方法：Chorme开发者平台调试、Fildder远程调试、Chrome Inspect真机调试、wenwire远程调试。
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

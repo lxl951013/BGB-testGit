@@ -1,0 +1,127 @@
+
+http://www.mzitu.com
+
+http://www.mmjpg.com
+
+移动端适配：http://www.cnblogs.com/PeunZhang/p/3407453.html
+
+前端知识： http://www.qdfuns.com/notes/18321/b3fe50a5de4e5d2922768aff34f21216.html
+
+日常整理的一些网址  http://www.qdfuns.com/notes/19125/e1c1e49a6034d18cf3dc7b6e50a3d18a.html
+
+h5调用底层接口的一些知识：https://blog.csdn.net/qq_36538012/article/details/82014136
+
+前端小技巧知识：       http://www.qiutianaimeili.com/
+
+易源API接口：         https://www.showapi.com/ 
+
+angularJS:            http://www.runoob.com/angularjs/angularjs-tutorial.html
+
+ionic:                http://www.ionic.wang/js_doc-index.html
+
+nodeJS:               http://www.runoob.com/nodejs/nodejs-tutorial.html
+
+VueJS:                http://v1-cn.vuejs.org/guide/
+
+W3CSchool：           https://www.w3cschool.cn/
+
+图标库：              http://www.iconfont.cn/
+
+我的 GitHub:          https://github.com/
+
+ GitHub:        https://github.com/Wscats
+                      https://github.com/OneSixOneTwo
+                   https://github.com/Wscats/angular-demo
+                   https://github.com/Wscats/vue-demo
+
+Angular Vue react：  https://github.com/Wscats/CV/blob/master/VueReactAngular.md
+
+
+WeUI html结构构建：   https://weui.io/
+
+Muse-UI 组件：        http://www.muse-ui.org/#/install
+
+MUI框架 ：            http://dev.dcloud.net.cn/mui/ui/#offcanvas
+
+打包Cordova及Hbuild： https://github.com/Wscats/Good-text-Share/issues/48
+
+新浪云 ：             http://t.cn/RaTqXvk
+                      http://www.sinacloud.com/?from=baidu_web
+
+前端网：             https://www.qdfuns.com/portal
+
+layUI：              https://www.layui.com/doc/
+
+微信公众号平台：      https://mp.weixin.qq.com
+
+拉勾网简历：          https://www.lagou.com/rejame/myresume.html
+
+本地化存储：          http://www.w3school.com.cn/html5/html_5_webstorage.asp
+
+cnode.js              https://cnodejs.org/api
+
+海南南派实业有限公司 https://hnnanpai.1688.com/
+
+佛山市顺德区友佳电器有限公司 https://gcj73178397.cn.gongchang.com/
+
+顺德楼市网手机版    http://m.sd888.org/Default.aspx
+
+
+github angular 效果图  https://lxl951013.github.io/all-project/angular1/indexText.html#/index/news    可访问
+               新浪云 http://1.vueproject.applinzi.com/angular/indexText.html#/index/yule             可访问
+
+github vue1 效果图   https://lxl951013.github.io/Vue-demo/public/index.html#/page1                   有bug
+                     http://1.vueproject.applinzi.com/vue2/index.html#/page1                         可访问
+
+github vue2 效果图  https://lxl951013.github.io/all-project/vue2/public/index.html#/index/list        可访问
+            新浪云  http://1.yuntest.applinzi.com/public/index.html#/index/list                       可访问
+
+
+前途无忧：  http://i.51job.com/resume/tri_resume.php
+
+邦购        https://lxl951013.github.io/jQuery-project/src/index.html#
+
+
+
+https://192.168.1.104/svn/nationaltrip/trunk/H5
+https://192.168.1.104/svn/huilv/文档库/需求文档
+https://192.168.1.104/svn/nationaltrip/branches/APP安装包
+
+
+
+huilv_web入口https://test.iotour.cn:18801/huilv_web/view/admin/index.html 
+huilv_web_merchants 入口https://test.iotour.cn:18801/huilv_web_merchants/html/frame.html#/index
+
+打飞机:http://1.vueproject.applinzi.com/html/%E6%89%93%E9%A3%9E%E6%9C%BA.html
+
+3d魔方：http://1.vueproject.applinzi.com/html/3D%E9%AD%94%E6%96%B9.html
+
+打地鼠：http://1.vueproject.applinzi.com/html/%E6%89%93%E5%9C%B0%E9%BC%A0.html
+
+烟花：http://1.vueproject.applinzi.com/html/%E7%BB%9A%E4%B8%BD%E7%9A%84%E7%83%9F%E8%8A%B1.html
+
+js瀑布流布局效果：http://1.vueproject.applinzi.com/html/js%E7%80%91%E5%B8%83%E6%B5%81%E5%B8%83%E5%B1%80.html
+
+自制音乐播放器：http://1.vueproject.applinzi.com/html/music%20play/index.html
+
+魔性的舞蹈：http://1.vueproject.applinzi.com/html/%E9%AD%94%E6%80%A7%E7%9A%84%E8%88%9E%E8%B9%88.html
+
+css小汽车：http://1.vueproject.applinzi.com/html/css%E5%88%B6%E4%BD%9C%E5%B0%8F%E6%B1%BD%E8%BD%A6.html
+
+颜色识别：http://1.vueproject.applinzi.com/html/%E4%B8%8D%E5%90%8C%E9%A2%9C%E8%89%B2%E7%9A%84%E8%89%B2%E5%9D%97.html
+
+雨滴效果：http://1.vueproject.applinzi.com/html/%E9%9B%A8%E6%BB%B4%E6%95%88%E6%9E%9C.html
+
+跑马灯效果：http://1.vueproject.applinzi.com/html/%E8%B7%91%E9%A9%AC%E7%81%AF%E6%95%88%E6%9E%9C.html
+
+css多种轮播效果：http://1.vueproject.applinzi.com/html/css%E5%A4%9A%E7%A7%8D%E8%BD%AE%E6%92%AD%E6%95%88%E6%9E%9C.html
+
+canvas 五子棋大战 ：http://1.vueproject.applinzi.com/html/Canvas%E5%B0%8F%E6%B8%B8%E6%88%8F%E4%B9%8B%E4%BA%94%E5%AD%90%E6%A3%8B%E5%A4%A7%E4%BD%9C%E6%88%98.html
+
+中国称谓计算器：http://1.vueproject.applinzi.com/html/%E4%B8%AD%E5%9B%BD%E7%A7%B0%E8%B0%93%E8%AE%A1%E7%AE%97%E5%99%A8.html
+
+canvas 毛毛虫：http://1.vueproject.applinzi.com/html/Canvas%E5%88%B6%E4%BD%9C%E6%AF%9B%E6%AF%9B%E8%99%AB.html
+
+scc3 旋转太极：http://1.vueproject.applinzi.com/html/css3-3D%E6%97%8B%E8%BD%AC%E5%A4%AA%E6%9E%81.html
+
+css3 三角形互动：http://1.vueproject.applinzi.com/html/css3%E4%B8%89%E8%A7%92%E5%BD%A2%E4%BA%92%E5%8A%A8.html

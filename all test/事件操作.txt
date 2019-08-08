@@ -1,0 +1,15 @@
+//判断单选框是否选中
+$(":radio").click(function(){
+   if($(this).val()=='radio1'){$('.radio1').show()}else if($(this).val()=='radio2'){$('.radio1').hide()}
+});
+
+//判断复选框是否选中
+$("#checkStatus").on('click',function(){
+   if($("#checkStatus").is(":checked")){$('.XX').show();}else{$('.XX').hide();}
+});
+
+//下拉选择监听
+$('.tab1_select').on('change',function(){
+   var Value = $('.tab1_select').val();
+   if(Value==1){$('.11').show();}else if(Value==2){$('.22').hide();}else if(Value==3){$('.33').hide();}
+});

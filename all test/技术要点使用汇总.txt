@@ -1,0 +1,97 @@
+1、销毁表格，重新渲染
+   $("#table").bootstrapTable('destroy');
+
+ajax数据
+$("#table_list_1").jqGrid（{}）
+$("#table_list_1").jqGrid('clearGridData');  //清空表格
+$("#table_list_1").jqGrid('setGridParam',{  // 重新加载数据
+	datatype:'local',
+	data : mydata,   //  newdata 是符合格式要求的需要重新加载的数据 
+	page:1
+}).trigger("reloadGrid");
+
+
+2.multipleSelect 使用介绍
+  http://wenzhixin.net.cn/p/multiple-select/docs/index.html?locale=zh_CN#browser-compatibility
+
+  https://www.qdfuns.com/article/18084/73b3ec900068add0a6816aea180dd20b.html
+
+3、判断单选框是否选中
+  $(":radio").click(function(){
+   if($(this).val()=='radio1'){$('.radio1').show()}else if($(this).val()=='radio2'){$('.radio1').hide()}
+  });
+
+4、判断复选框是否选中
+  $("#checkStatus").on('click',function(){
+     if($("#checkStatus").is(":checked")){$('.XX').show();}else{$('.XX').hide();}
+  });
+
+
+5、下拉选择监听
+  $('.tab1_select').on('change',function(){
+     var Value = $('.tab1_select').val();
+     if(Value==1){$('.11').show();}else if(Value==2){$('.22').hide();}else if(Value==3){$('.33').hide();}
+  });
+
+6、闭包理解
+  function add(){
+			let name=1;
+			let set = function(x){
+				name = name*10*x;//20 600 2400
+				return name;
+			}
+			return set;
+		}
+		let getNum = add();
+		let num2 = getNum(2);//20
+		let num3 = getNum(3);//600
+		let num4 = getNum(4);//2400
+		//闭包：函数嵌套函数，内部函数可以调用外部函数的参数和变量，参数和变量不会被垃圾回收机制清除（变量回随着调用次数而改变）
+		console.log(num2,num3,num4)
+
+
+6、php跨域访问
+     header('Access-Control-Allow-Origin:*');
+
+
+7、audio音乐标签 
+    audio.play();// 这个就是播放  
+    audio.pause(); // 这个就是暂停
+
+8、video视频标签
+    audio.play();// 这个就是播放  
+    video.pause(); // 这个就是暂停
+
+9、cmd 命令
+  d:  //切换到d盘
+  cd node //切换到d盘node文件夹
+
+10、npm 命令
+   npm install xx -g  //-g全局安装xx
+   npm uninstall xx   //本地卸载xx
+   cmd -> ipconfig  //查询本机ip地址
+  
+ 
+11、创建node项目
+   a.全局安装node -g
+   b.cmd 命令输入 D:  -> cd node //切换到d盘node文件夹
+   c.cmd 命令输入npm init 创建package.json
+   d.cmd 命令输入npm install xx 下载模块
+   e.cmd 命令输入node xx.js 运行文件
+   f.cmd 命令输入 Ctrl+c终止运行
+   运行node可进入运算模式，相当于编辑JS
+
+12、bootstrap-daterangepicker 日历控件
+   $('.selcetTime').daterangepicker({
+	singleDatePicker: true,
+	singleClasses: "picker_4",
+	locale:{format : 'YYYY-MM-DD'}							
+   }, function(start, end, label) {									
+   }).on('apply.daterangepicker',function(){
+   }).on('hide.daterangepicker', function() {});
+
+13、bootstrap-table下拉多选
+   bootstrap-select.css、bootstrap-select.js、defaults-zh_CN.js
+   1）<select class="selectpicker" multiple>
+   2）$('.selectpicker').selectpicker('val', '1');
+

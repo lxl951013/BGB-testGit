@@ -1,0 +1,304 @@
+//多选框与文字水平对不齐
+  .MyCheckBoxInput{vertical-align: text-bottom;margin-right: 4px;}
+
+//输入框长度100%设置
+  .MyInput{height: 34px;width: 100%;font-size: 14px;text-indent: 2em;}
+
+//自定义列表ul
+  .MyUL{margin: 0;padding: 0;}
+  .MyLi{list-style: none;padding: 6px;}
+
+//文字下划线
+  .MyUnderLine{text-decoration: underline;cursor: pointer;}
+  .MyBoldUnderLine{text-decoration: underline;cursor: pointer;font-weight:blod;}
+
+//自定义span旁白
+  .MySpan{padding: 0px 6px;display: inline-block;}
+
+
+
+
+//---字符串去除空格---  
+myClass.trim(str, type)  type 1-所有空格  2-前后空格  3-前空格 4-后空格
+
+//---字符串转大小写--- 
+myClass.changeCase(str, type) type 1-首字母大写  2-首字母小写 3-大小写转换 4-全部大写  5-全部小写
+
+//---字符串循环复制---
+myClass.repeatStr(str, count)  count-次数
+
+//---字符串文本替换---
+myClass.replaceAll(str, AFindText, ARepText) AFindText-要被替换的那个文本；ARepText-用来替换的文本
+
+//---字符连续替换---
+myClass.replaceStr(str, regArr, type, ARepText)
+        regArr-替换的[个数]； type：0从第一个开始替换、1从最后一个开始替换；ARepText-用来填充的文本 
+
+//---字符串过滤---
+myClass.filterStr(str, type, restr, spstr)
+   type:special-特殊字符,html-html标签,emjoy-emjoy表情,word-小写字母，WORD-大写字母，number-数字,chinese-中文
+   restr:匹配到type的用XX来替换
+   spstr：匹配到type的除了XX之外
+
+//---检测字符串类型---
+myClass.checkType(str, type)
+      type: email-邮箱、phone-手机、tel-电话、number-数字、english-英文、text-数字或字母或下划线、chinese-中文、lower-小写、upper-大写
+
+//---检测密码强度---
+myClass.checkPwd(str)   0-1为弱；2为中等；3-4为强
+
+//---随机进制码---
+myClass.randomWord(count)  count：2-36
+
+//---查找字符串出现的次数---
+myClass.countStr(str, strSplit)  strSplit-要检测的字符串
+
+//---格式化分割处理字符串---
+myClass.formatText(str, size, delimiter) 默认以“,”从右往左3个3个分割
+     size：分割基数；delimiter-分割符合
+
+//---找出最长单词的长度 ---
+myClass.longestWord(str, splitType)  splitType-分割符号
+
+
+
+
+
+//---数组去重---
+myClass.removeRepeatArray(arr)
+
+//---数组顺序打乱---
+myClass.upsetArr(arr)
+
+//---数字类型的数组最大值---
+myClass.maxArr(arr)
+
+//---数字类型的数组最小值---
+myClass.minArr(arr)
+
+//---数字类型的数组求和---
+myClass.sumArr(arr)
+
+//---数组平均值---
+myClass.covArr(arr)
+
+//---从数组中随机获取元素---
+myClass.randomOne(arr)
+
+//---回数组（字符串）一个元素出现的次数---
+myClass.getEleCount(obj, ele) obj-数组或字符串；ele-要匹配的元素
+
+//---得到n1-n2下标的数组---
+myClass.getArrayNum(arr, n1, n2)
+
+//---删除值为'val'的数组元素---
+myClass.removeArrayForValue(arr, val, type) 
+     type：为空时val为全等删除； ‘%’时为包含删除
+
+//---获取数组对象中的某些项---
+myClass.getOptionArray(arr, keys, type)
+     keys：提取的项或元素，可多个元素，以‘,’分开
+     type：为空时提取对象返回数组对象；为1时提取个数返回数组
+
+//---删除数组对象中的某些项---
+myClass.filterOptionArray(arr, keys)
+     keys：删除的项或元素，可多个元素，以‘,’分开
+
+//---数组对象的排序---
+myClass.arraySort(arr, sortText=>'a,b')
+     sortText=>'a,b': a是第一排序条件，b是第二排序条件
+
+//---数组扁平化(多维数组转换为一维数组)---
+myClass.steamroller(arr) 
+
+
+
+
+
+
+//---适配rem---
+myClass.getFontSize()
+
+//---某一个时间的倒计时---
+myClass.getEndTime(endTime)  endTime-'2017/7/22 16:0:0'
+
+//---随机产生颜色---
+myClass.randomColor()
+
+//---随机返回一个范围的数字---
+myClass.randomNumber(n1, n2)
+
+//---设置url参数---
+myClass.setUrlPrmt(obj)  obj-参数对象
+
+//---获取url参数---
+myClass.getUrlParams(objName)  objName-参数名称
+
+//---现金额转换中文大写---
+myClass.upDigit(num)
+
+//---清除对象中值为空的属性---
+myClass.filterParams(obj)
+
+//---设置cookie---
+myClass.setCookie(name, value, iDay)  iDay-过期时间
+
+//---获取cookie---
+myClass.getCookie(name)
+
+//---删除cookie---
+myClass.removeCookie(name)
+
+
+
+
+//---检测对象是否有哪个类名---
+myClass.hasClass(obj, classStr) obj-元素对象；classStr-要查找的类名
+
+//---添加类名---
+myClass.addClass(obj, classStr)
+
+//---删除类名---
+myClass.removeClass(obj, classStr)
+
+//---替换类名---
+myClass.replaceClass(obj, newName, oldName)
+
+//---获取兄弟节点---
+myClass.siblings(obj, opt)
+
+//---设置样式---
+myClass.css(obj, json)  obj-元素  json-样式对象
+
+//---设置HTML内容---
+myClass.html(obj,htmlTxt)  htmlTxt-内容结构
+myClass.text(obj,htmlTxt)  htmlTxt-内容结构
+
+//---节点显示---
+myClass.show(obj)  obj-元素节点
+
+//---节点隐藏---
+myClass.hide(obj)  obj-元素节点
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
+
+//---去除空格---
+myClass.xxxx()
